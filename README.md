@@ -12,7 +12,7 @@ Este projeto é um exemplo de aplicação Spring Boot que demonstra os fundament
 
 ## Configuração do Banco de Dados
 
-1. Crie um banco de dados MySQL chamado `students`.
+1. Crie um banco de dados MySQL chamado `project`.
 2. Configure as credenciais do banco de dados no arquivo `application.properties`.
 
 ## Executando a Aplicação
