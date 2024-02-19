@@ -4,7 +4,7 @@ Este projeto é um exemplo de aplicação Spring Boot que demonstra os fundament
 
 ## Utilizados no Projeto
 
-- Java 17 LTS
+- Java 21 LTS
 - IntelliJ IDEA
 - MySQL
 - Lombok
