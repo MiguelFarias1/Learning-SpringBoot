@@ -1,4 +1,4 @@
-package com.nelio.udemy.project.resources;
+package com.nelio.udemy.project.controllers;
 
 import com.nelio.udemy.project.entities.User;
 import com.nelio.udemy.project.services.UserService;
@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/users")
-public class UserResource {
+public class UserController {
 
     @Autowired
     private UserService userService;

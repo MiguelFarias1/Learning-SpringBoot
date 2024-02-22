@@ -20,10 +20,11 @@ public class Payment implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private Instant moment;
 
     @OneToOne
-    @MapsId(value = "")
+    @MapsId()
     @JsonIgnore
     private Order order;
 

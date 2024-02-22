@@ -1,4 +1,4 @@
-package com.nelio.udemy.project.resources;
+package com.nelio.udemy.project.controllers;
 
 import com.nelio.udemy.project.entities.Order;
 import com.nelio.udemy.project.services.OrderService;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/orders")
-public class OrderResource {
+public class OrderController {
 
     @Autowired
     private OrderService orderService;

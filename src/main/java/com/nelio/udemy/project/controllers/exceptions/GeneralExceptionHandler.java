@@ -1,4 +1,4 @@
-package com.nelio.udemy.project.resources.exceptions;
+package com.nelio.udemy.project.controllers.exceptions;
 
 import com.nelio.udemy.project.exceptions.ResourceNotFoundException;
 import com.nelio.udemy.project.services.exceptions.DataBaseException;

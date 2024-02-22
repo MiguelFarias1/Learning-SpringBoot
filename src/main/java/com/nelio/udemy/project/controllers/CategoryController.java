@@ -1,4 +1,4 @@
-package com.nelio.udemy.project.resources;
+package com.nelio.udemy.project.controllers;
 
 import com.nelio.udemy.project.entities.Category;
 import com.nelio.udemy.project.services.CategoryService;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/categories")
-public class CategoryResource {
+public class CategoryController {
 
     @Autowired
     private CategoryService categoryService;

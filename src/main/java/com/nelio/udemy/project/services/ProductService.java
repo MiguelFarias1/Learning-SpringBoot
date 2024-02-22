@@ -26,4 +26,9 @@ public class ProductService {
         else
             throw new IllegalArgumentException("Order not found !");
     }
+
+    public Product save(Product product) {
+
+        return productReposityory.save(product);
+    }
 }

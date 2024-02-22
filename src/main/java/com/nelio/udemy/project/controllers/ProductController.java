@@ -1,20 +1,16 @@
-package com.nelio.udemy.project.resources;
-
+package com.nelio.udemy.project.controllers;
 
 import com.nelio.udemy.project.entities.Product;
 import com.nelio.udemy.project.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping(value = "/products")
-public class ProductResource {
+public class ProductController {
 
     @Autowired
     private ProductService productService;
@@ -33,5 +29,13 @@ public class ProductResource {
         var user = productService.findById(id);
 
         return ResponseEntity.ok().body(user);
+    }
+
+    @PostMapping
+    public ResponseEntity<Product> insert(@RequestBody Product product) {
+
+        productService.save(product);
+
+        return ResponseEntity.ok(product);
     }
 }
